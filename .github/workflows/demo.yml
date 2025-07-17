@@ -12,7 +12,8 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
+env:
+   name: Rahul
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -27,7 +28,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, i am rahul testing and learning github action!
+        run: echo Hello, i am rahul testing and learning github action! $name
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
